@@ -1,4 +1,25 @@
 {% extends "base.html" %}
 {% block content %}
-    Python/Flask Page
+    <strong> What is Pytest & Flask? </strong> <br><br>
+
+    <strong>Pytest: </strong> Pytest is a method used in creating projects which in turn can make tests to ensure project functionality.
+    Per this project, we had created a separate tests folder which has an empty __init__.py file as well as our own created _test.py
+    files. Per this first project, the most important files were the context_process_test.py file and the simple_pages_test.py files.
+    The context test file was used to test the flask environment, as well as the info used in the copyright data (which was used
+    to check date and time formats... these were done with functions called: test_context_variables_environment, test_context_variables_year,
+    and test_context_currency_format which in turn all used local/test variables and tested response status codes of 200 and asserting the content
+    in response data. All data used were in the __init__.py file within the context_processors directory). The simple_pages_test file first
+    tested the page names within the navigation at the top (this is done in the test_request_main_menu_links function) and then every page returned
+    a 200 status code response via first getting the page (client.get function) and then seeing the response (assert response.status_code). Finally,
+    it tests and ensures that a page that doesn't exist returns a 404 status code. These simple pages in turn were created via first extending
+    base.html and then having local content which was separated with block content and endblock (base.html is defined in the templates folder).</p>
+    <img src="https://headlesstesting.com/assets/blog/2020/08/pytest-c314ee6102852a44185ef3893effc3c4f4cc8e8eef823b83214ecb2d72f4eff8.png", alt="Pytest Image"/>
+    <br><br><br>
+
+    <strong>Flask: </strong> </p>
+    <img src="", alt=""/>
+    <br><br><br>
+
+    Link to the project on Github Link to flask, flask Blueprint documentation, and flask testing with PyTest.
+    Explain the purpose of every file in the project using an outline that represents the directory and file structure of the project.
 {% endblock %}

@@ -1,4 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
-    Docker Page check
+    <strong> What is Docker? </strong> <br><br>
+
+    <strong>Containers: </strong> A standard unit of software, a docker container packages up code and all of its dependencies to ensure
+    efficient, reliable and quick running of said application from one computing environment to others. Thanks to docker, a container
+    allows for easy execution of a package of software as well as everything needed to run it (IE: system tools, system libraries,
+    settings, etc.). These containers in turn allow for quicker and smaller ways to run applications without the typical usage of a
+    virtual machine which requires guest operating systems and a hypervisor (in comparison to a container engine and singular operating
+    system for docker containers). </p>
+    <img src="https://www.docker.com/sites/default/files/d8/styles/large/public/2018-11/container-what-is-container.png?itok=vle7kjDj", alt="Docker Container Diagram"/>
+    <br><br><br>
+
+    <strong>Images: </strong> Automatically generated when a docker container is made, a docker image is a read-only template which
+    contains a set of instructions for making an application run on docker. When ran, it can become one of many instances of a container.
+    Made up of multiple layers (which build off from the previous layer with some changes), one of their advantages is that they are
+    reusable, which means they can be deployed on any host and across multiple projects (thus saving time). Similar to a git commit, a
+    docker image is like a snapshot of a docker container... but they are also immutable, making it so new software or configuration
+    does not change the image.</p>
+    <img src="https://docs.microsoft.com/en-us/dotnet/architecture/microservices/container-docker-introduction/media/docker-containers-images-registries/taxonomy-of-docker-terms-and-concepts.png", alt="Docker Image Diagram"/>
+    <br><br><br>
+
 {% endblock %}
