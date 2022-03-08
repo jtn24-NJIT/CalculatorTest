@@ -31,7 +31,7 @@
     or pulling from the master branch. Specified in dev.yml and prod.yml within .github and workflows (directories). To effect the prod heroku
     app, a git push must be made to the master branch. Once that is done, it additionally goes through pytest, extracts metadata from Docker
     using specified credentials as well as updates the heroku prod app accordingly. To effect the dev heroku app, a git pull must be made from the
-    master branch. Again performing a pytest, it then ONLY updates the heroku dev app accordingly.
+    master branch. Again performing a pytest, it then ONLY updates the heroku dev app accordingly with specified credentials.
     </p>
     <img src="https://miro.medium.com/max/640/0*h-oNfEHFjEB2hOpZ.png" alt="CI/CD Diagram"/>
     <br><br><br>
