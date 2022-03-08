@@ -1,5 +1,7 @@
 # Calculator Project Setup
-[![Development Workflow](https://github.com/jtn24-NJIT/CalculatorTest/actions/workflows/dev.yml/badge.svg?branch=development)](https://github.com/jtn24-NJIT/CalculatorTest/actions/workflows/dev.yml)
+[![Development Workflow](https://github.com/jtn24-NJIT/CalculatorTest/actions/workflows/dev.yml/badge.svg?branch=master)](https://github.com/jtn24-NJIT/CalculatorTest/actions/workflows/dev.yml)
+
+[![Production Workflow](https://github.com/jtn24-NJIT/CalculatorTest/actions/workflows/prod.yml/badge.svg?branch=master)](https://github.com/jtn24-NJIT/CalculatorTest/actions/workflows/prod.yml)
 
 Hi, people call me Jake.
 
