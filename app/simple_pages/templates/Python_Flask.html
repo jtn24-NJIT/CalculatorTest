@@ -25,64 +25,64 @@
 
     <strong> <u> Project Outline Explanation </u></strong> </p>
     <strong>docker-compose.yml file (root directory): </strong> Specifies docker version & its services of flask which runs on ports 80:5000 as well
-    as the volumes of .:/home/myuser. </p>
+    as the volumes of .:/home/myuser. </p> <br>
 
     <strong>DockerFile (root directory): </strong> Specifies what extra features need to be downloaded, in particular it takes from python 3.8
-    and copies from requirements.txt. </p>
+    and copies from requirements.txt. </p> <br>
 
     <strong>Readme.md (root directory): </strong> Used by Github to more simply explain the repository/project as created by the user. Can be
     auto-generated as well during creation of project, in particular this project contains 2 badges of the development workflow and the prod
-    workflow. </p>
+    workflow. </p> <br>
 
     <strong>Requirements.txt (root directory): </strong> Used by the DockerFile to install specific features, such as pytest, gunicorn and Flask. </p>
-    </p>
+    </p> <br>
 
     <strong>dev.yml (root directory -> .github directory -> workflows directory): </strong> The development workflow file, it specifies that
     upon a pull request to the master branch, python 3.8 is installed alongside the features in requirements.txt and runs pytest with -vv (shows
     more specific details about each test). Afterwards, it also deploys to the dev app of the project upon heroku utilizing the api key (secret
-    specified on github) and the author's username and email. </p>
+    specified on github) and the author's username and email. </p> <br>
 
     <strong>prod.yml (root directory -> .github directory -> workflows directory): </strong> The production workflow file, it specifies that
     upon a push request to the master branch, python 3.8 is installed alongside the features in requirements.txt and runs pytest with -vv (shows
     more specific details about each test). Afterwards, it also builds a container on Docker via utilizing the author's username and password
     (secrets specified on github) as well as extracts the user's image(s) upon Docker. Finally, it deploys to the prod app of the project upon
-    heroku utilizing the api key (secret specified on github) and the author's username and email. </p>
+    heroku utilizing the api key (secret specified on github) and the author's username and email. </p> <br>
 
     <strong>__init__.py (root directory -> app directory -> context_processors directory): </strong> Utilized by the base.html file, this file
-    has a specific message created by the user as well as create objects which are utilized in the copyright message on the website.</p>
+    has a specific message created by the user as well as create objects which are utilized in the copyright message on the website. </p> <br>
 
     <strong>__init__.py (root directory -> app directory -> simple_pages directory): </strong> Utilized by the project, this file imports
     needed functions from flask and jinja2, allowing for easier implementation of different pages as well as returning a 404 status
-    error if said page cannot be found. </p>
+    error if said page cannot be found. </p> <br>
 
     <strong> Continuous_Integration_and_Deployment.html, Docker.html, Git.html, index.html & Python_Flask.html (root directory ->
         app directory -> simple_pages directory -> templates directory): </strong> Utilized by the project, this directory and the files
-    within all extend the base.html file and has unique block content file within to provide specific content. </p>
+    within all extend the base.html file and has unique block content file within to provide specific content. </p> <br>
 
     <strong>style.css (root directory -> app directory -> static directory -> css directory): </strong> Utilized by the html files, this file
-    provides a small aesthetic detail to each html file (larger, 200% sized text). </p>
+    provides a small aesthetic detail to each html file (larger, 200% sized text). </p> <br>
 
     <strong>base.html (root directory -> app directory -> templates directory): </strong> Utilized by the html files, this file
     provides a basis for each page on the website, allowing for the navigation bar to appear on every page and allow for easy
-    navigation. </p>
+    navigation. </p> <br>
 
     <strong>__init__.py (root directory -> app directory): </strong> Importing flask, the simple_pages directory and the context processors,
     this file has a function of create_app which creates and configures an instance of the flask app with a secret key and registering a
-    'blueprint' from the simple_pages directory. </p>
+    'blueprint' from the simple_pages directory. </p> <br>
 
     <strong>run.py (root directory -> app directory): </strong> Importing create_app from app, this file is only needed for configuration/
-    working with Gunicorn in order to serve the app in production. </p>
+    working with Gunicorn in order to serve the app in production. </p> <br>
 
     <strong>conftest.py (root directory -> tests directory): </strong> Importing pytest and create_app from app, this file defines the following
-    functions: Application (making the app itself), client (makes the http client) and runner (makes the task runner). </p>
+    functions: Application (making the app itself), client (makes the http client) and runner (makes the task runner). </p> <br>
 
     <strong>context_process_test.py (root directory -> tests directory): </strong> Importing datetime and getenv from the operating system, this
     file tests if the environment is actually working for Flask (200 status code response) and tests the two different data types used in the
-    copyright message (data and currency). </p>
+    copyright message (data and currency). </p> <br>
 
     <strong>simple_pages_test.py (root directory -> tests directory): </strong> Testing the website, this file first ensures that the navigation
     bar is properly named and goes to the right link, as well as ensures that every page does exist for the website (200 status code). Finally,
-    it checks if a page that should not exist does properly return a 404 status code.</p>
+    it checks if a page that should not exist does properly return a 404 status code.</p> <br>
 
 
 {% endblock %}
