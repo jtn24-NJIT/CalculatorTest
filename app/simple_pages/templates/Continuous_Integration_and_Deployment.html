@@ -27,9 +27,11 @@
     <img src="https://www.pagerduty.com/wp-content/uploads/2020/01/continuous-integration-2.png" alt="Continuous Integration"/>
     <br><br><br>
 
-    <strong>Project Implementation: </strong> Explain how you have the project setup to use GitHub Actions, How you can review code using a development server before merging pull
-    requests, how you can deploy master to a production server. Explain how you deploy an image of your project to Dockerhub when master is
-    updated.
+    <strong>Project Implementation: </strong> To do this automatically upon heroku, changes are made according to whether or not we are pushing
+    or pulling from the master branch. Specified in dev.yml and prod.yml within .github and workflows (directories). To effect the prod heroku
+    app, a git push must be made to the master branch. Once that is done, it additionally goes through pytest, extracts metadata from Docker
+    using specified credentials as well as updates the heroku prod app accordingly. To effect the dev heroku app, a git pull must be made from the
+    master branch. Again performing a pytest, it then ONLY updates the heroku dev app accordingly.
     </p>
     <img src="https://miro.medium.com/max/640/0*h-oNfEHFjEB2hOpZ.png" alt="CI/CD Diagram"/>
     <br><br><br>
