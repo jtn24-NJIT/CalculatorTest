@@ -22,9 +22,9 @@ class Subtraction:
 
 
 class Multiplication:
-    """ This is the subtraction class"""
+    """ This is the multiplication class"""
 
     @staticmethod
     def multiply(value_1, value_2):
-        """ This is the multiplication method"""
+        """ This is the multiply method"""
         return value_1 * value_2
