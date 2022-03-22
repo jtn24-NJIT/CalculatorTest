@@ -3,7 +3,7 @@
 
 [![Production Workflow](https://github.com/jtn24-NJIT/CalculatorTest/actions/workflows/prod.yml/badge.svg?branch=master)](https://github.com/jtn24-NJIT/CalculatorTest/actions/workflows/prod.yml)
 
-Hi, people call me Jake.
+Hi my name is Jake T. Nhan.
 
 To run tests, Lint, and Coverage report use this command:
 
