@@ -40,5 +40,5 @@ def test_request_CICD_page(client):
 
 def test_request_page_not_found(client):
     """This ensures that a page that doesn't exist gets the correct HTML response of status code 404"""
-    response = client.get("/page5")
+    response = client.get("/page1010")
     assert response.status_code == 404
