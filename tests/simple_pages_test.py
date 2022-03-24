@@ -38,7 +38,27 @@ def test_request_CICD_page(client):
     response = client.get("/Continuous_Integration_and_Deployment")
     assert response.status_code == 200
 
+def test_request_Pylint_page(client):
+    """This ensures that the Pylint page gets the correct HTML response of status code 200"""
+    response = client.get("/Pylint")
+    assert response.status_code == 200
+
+def test_request_AAA_page(client):
+    """This ensures that the AAA page gets the correct HTML response of status code 200"""
+    response = client.get("/Arrange_Act_Assert_Testing")
+    assert response.status_code == 200
+
+def test_request_OOP_page(client):
+    """This ensures that the OOP page gets the correct HTML response of status code 200"""
+    response = client.get("/Object_Oriented_Programming")
+    assert response.status_code == 200
+
+def test_request_SOLID_page(client):
+    """This ensures that the SOLID page gets the correct HTML response of status code 200"""
+    response = client.get("/Solid")
+    assert response.status_code == 200
+
 def test_request_page_not_found(client):
     """This ensures that a page that doesn't exist gets the correct HTML response of status code 404"""
-    response = client.get("/page1010")
+    response = client.get("/page55")
     assert response.status_code == 404
