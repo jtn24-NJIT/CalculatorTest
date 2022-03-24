@@ -60,5 +60,5 @@ def test_request_SOLID_page(client):
 
 def test_request_page_not_found(client):
     """This ensures that a page that doesn't exist gets the correct HTML response of status code 404"""
-    response = client.get("/page1010")
+    response = client.get("/page55")
     assert response.status_code == 404
