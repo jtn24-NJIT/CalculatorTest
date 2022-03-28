@@ -5,6 +5,9 @@
 
 Hi my name is Jake T. Nhan.
 
+https://jtn24-dev.herokuapp.com/
+https://jtn24-prod.herokuapp.com/
+
 To run tests, Lint, and Coverage report use this command:
 
 pytest  --pylint --cov
