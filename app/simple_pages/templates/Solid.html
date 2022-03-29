@@ -6,23 +6,37 @@
     <img src="https://i0.wp.com/digitalvarys.com/wp-content/uploads/2019/06/GIT-Branchand-its-Operations.png?fit=1024%2C563&ssl=1", alt="An example of a project with multiple branches"/>
     <br><br><br>
 
-    <strong>Single-Responsibility Principle: </strong> U. </p>
-    <img src="https://wac-cdn.atlassian.com/dam/jcr:c6db91c1-1343-4d45-8c93-bdba910b9506/02%20Branch-1%20kopiera.png?cdnVersion=243", alt="An example of a merge"/>
+    <strong>Single-Responsibility Principle: </strong> The S in SOLID, single-responsibility principle states that a class should
+    only have one job as it should have only one reason to change. Should a class have multiple functions, the editing/modification
+    of one could end up negatively affecting the other functions.</p>
+    <img src="https://dotnettutorials.net/wp-content/uploads/2018/06/Single-Responsibility-Principle-in-C-768x244.png", alt="Single-Responsibility Principle"/>
     <br><br><br>
 
-    <strong>Open-Closed Principle: </strong> C.</p>
-    <img src="https://backlog.com/app/themes/backlog-child/assets/img/guides/git/basics/rewriting_history_001.png" alt="Git Commit Example">
+    <strong>Open-Closed Principle: </strong> The O in SOLID, the open-closed principle states that classes should be open for extension
+    but closed for modification. In essence, should a class be worked upon/modified by another developer, they can do so through
+    extending the class and thus not modifying the original class itself. </p>
+    <img src="https://1.bp.blogspot.com/-M01ajBmLSlg/TixAYzm_eyI/AAAAAAAAA9Y/g0qLrJfFCMA/s1600/OpenClosed.png" alt="Open-Closed Principle">
     <br><br><br>
 
-    <strong>Liskov Substitution Principle: </strong> E. </p>
-    <img src="https://assets-global.website-files.com/5ff621612284ed73d44c11f3/5ff621612284edbe0f4c1c58_5f19a241624e0709908d965b_robin-github-issue-tag-system.png" alt="Github Tag Classification">
+    <strong>Liskov Substitution Principle: </strong> The L in SOLID, the Liskov substitution principle states that classes within
+    a program should be replaceable with instances of their subtypes without causing error. Derived classes should be able
+    to extend their base class(es) without changing their behavior, for if this principle is violated, a concept may have been
+    prematurely generalized and an unnecessary superclass might end up being created. Liskov's principle also increases efficiency
+    in limiting how much code would be needed to be modified when adding/modifying a new subclass.</p>
+    <img src="https://th.bing.com/th/id/R.498b7e1673ede23984b3ac3267c99e2e?rik=dXcUz6U2UR%2bJ1A&riu=http%3a%2f%2fwww.javabrahman.com%2fwp-content%2fuploads%2fLiskovSubstitutionPrinciple.png&ehk=l%2bsqKqGcVCGc%2b2rowp3YlVcN02ctzoy8w2ToXac%2fD9U%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Liskov Substitution Principle">
     <br><br><br>
 
-    <strong>Interface Segregation Principle: </strong> A. </p>
-    <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/develop-app-with-salesforce-cli-and-source-control/add-salesforce-dx-project-to-source-control/images/bf546ec3acd964673bf5f6302125fd93_step-4-github-and-git-clones.png" alt="Github remote repository example">
+    <strong>Interface Segregation Principle: </strong> The I in SOLID, the interface segregation principle states that clients
+    should not be forced to implement interfaces that they don't use; favoring multiple small interfaces based upon groups of
+    methods that serve individual submodules rather than one large one. This principle ensures that clients are not using unnecessary
+    interfaces, which in turn helps improve performance as the code can then ignore currently unused interfaces/actions that take
+    up processing.</p>
+    <img src="https://th.bing.com/th/id/R.d04e9753c5b81d4e46369b8dcf47af49?rik=2%2fYAjY2m%2fmRHXw&riu=http%3a%2f%2fwww.javabrahman.com%2fwp-content%2fuploads%2fInterface-Segregation-Principle-before-applying.png&ehk=29wlKzbKFwF7IowfDDoyoieRHosHd%2b5cQoAQhEEcGns%3d&risl=&pid=ImgRaw&r=0" alt="Interface Segregation Principle">
     <br><br><br>
 
-    <strong>Dependency Inversion Principle: </strong> A. </p>
-    <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/develop-app-with-salesforce-cli-and-source-control/add-salesforce-dx-project-to-source-control/images/bf546ec3acd964673bf5f6302125fd93_step-4-github-and-git-clones.png" alt="Github remote repository example">
+    <strong>Dependency Inversion Principle: </strong> The final letter of D in SOLID, the dependency inversion principle states that
+    classes should depend on abstraction rather than concretion. High-level modules must not depend on lower level modules, and this
+    principle allows for decoupling. Details should depend upon abstraction, not the other way around. </p>
+    <img src="https://i.ytimg.com/vi/ykGW0Zen0YY/maxresdefault.jpg" alt="Dependency Inversion Principle">
     <br><br><br>
 {% endblock %}
