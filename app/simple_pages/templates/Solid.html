@@ -2,9 +2,14 @@
 {% block content %}
     <strong> How Does Our Simple Calculator Demonstrate SOLID? </strong> <br><br>
 
-    <strong>Our Simple Calculator: </strong> A.</p>
-    <img src="https://i0.wp.com/digitalvarys.com/wp-content/uploads/2019/06/GIT-Branchand-its-Operations.png?fit=1024%2C563&ssl=1", alt="An example of a project with multiple branches"/>
-    <br><br><br>
+    <strong>Our Simple Calculator: </strong> Throughout project 2, we had worked upon a calculator class with multiple
+    different functions contained within separate directories. Throughout this page, the SOLID principle will be
+    described... Our calculator in particular follows the factory method pattern, in which our interface for creating the project
+    is user-defined, but the subclasses of the operations decide which class to instantiate. Our calculator in itself demonstrates
+    SOLID through having singular, isolated functions that limit interaction to prevent potential malfunction due to crossing
+    operations, the extension of every operation within different classes without allowing for potentially damaging modification,
+    every operation is isolated enough to allow for easy addition of new operations like division, and there is little
+    if not none reliance upon the derived/based classes for the parent/upper classes.</p>
 
     <strong>Single-Responsibility Principle: </strong> The S in SOLID, single-responsibility principle states that a class should
     only have one job as it should have only one reason to change. Should a class have multiple functions, the editing/modification
