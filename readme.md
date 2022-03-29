@@ -3,7 +3,7 @@
 
 [![Production Workflow](https://github.com/jtn24-NJIT/CalculatorTest/actions/workflows/prod.yml/badge.svg?branch=master)](https://github.com/jtn24-NJIT/CalculatorTest/actions/workflows/prod.yml)
 
-Hello! My name is Jake Tyler Nhan.
+Hello, my name is Jake Tyler Nhan.
 
 Heroku Dev Link: https://jtn24-dev.herokuapp.com/
 
