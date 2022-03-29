@@ -2,28 +2,39 @@
 {% block content %}
     <strong> How Does Our Simple Calculator Utilize Pylint? </strong> <br><br>
 
-    <strong>Our Simple Calculator: </strong> A.</p>
-    <img src="https://i0.wp.com/digitalvarys.com/wp-content/uploads/2019/06/GIT-Branchand-its-Operations.png?fit=1024%2C563&ssl=1", alt="An example of a project with multiple branches"/>
+    <strong>Our Simple Calculator: </strong> Throughout project 2, we had worked upon a calculator class with multiple
+    different functions contained within separate directories. Throughout this page, basic concepts will be described
+    towards the nature of testing in programming, as well as various principles and terminologies that are utilized
+    to help best make our calculator easier to modify and in the future.</p>
+
+    <strong>What is Pylint & Pytest?: </strong> Testing in Python is extremely important and beneficial, Python itself having created
+    two particularly popular ways to test. Pylint is one of them, and is a tol which checks for errors within the code as well as
+    enforcing a coding standard to ensure commonality. Looking for "code smells" as well and type errors, beyond more technical checks
+    it also sees if particular blocks of code can be used to judge a code's complexity. While not the most perfect due to its automated
+    processes (thus it may warn about something a user did intentionally), pytest however is more strictly defined by the user/developer.
+    With docker/virtual environments, in creating a project a tests directory can be made and populated with _test files, upon
+    running pytest within a terminal it quickly returns the result of each test as well as specific error messaging should one or
+    more of the tests fail.</p>
+    <img src="https://www.techbeamers.com/wp-content/uploads/2019/03/Pylint-Tool.png", alt="Pylint"/>
     <br><br><br>
 
-    <strong>What is Pylint & Pytest?: </strong> A.</p>
-    <img src="https://i0.wp.com/digitalvarys.com/wp-content/uploads/2019/06/GIT-Branchand-its-Operations.png?fit=1024%2C563&ssl=1", alt="An example of a project with multiple branches"/>
-    <br><br><br>
+    <strong>Encapsulation in Our Calculator: </strong> Encapsulation is utilized throughout much of our project, as every operations
+    (add, subtract and multiply) are all isolated, static methods that have the simplest possible and singular operation to be
+    handled.</p>
 
+    <strong>Inheritance in Our Calculator: </strong> Inheritance is demonstrated within the calculations directory, in that it has
+    two functions which are used in every instance in order to ensure the correct data is used (create, a classmethod for tuples and
+    convert_args_to_tuple_of_float to ensure that any data would be converted into floats for calculations). </p>
 
-    <strong>Encapsulation in Our Calculator: </strong> U. </p>
-    <img src="https://wac-cdn.atlassian.com/dam/jcr:c6db91c1-1343-4d45-8c93-bdba910b9506/02%20Branch-1%20kopiera.png?cdnVersion=243", alt="An example of a merge"/>
-    <br><br><br>
+    <strong>Polymorphism in Our Calculator: </strong> Polymorphism is demonstrated within the history directory, in that
+    it has multiple functions with similar names and yet unique, overriding operations to keep track of specific operations
+    as they are being used. Essentially, the method/process of getting an operation performed tracked into history is
+    the same for everyone; but they have to be unique to ensure that they are properly tracked.</p>
 
-    <strong>Inheritance in Our Calculator: </strong> C.</p>
-    <img src="https://backlog.com/app/themes/backlog-child/assets/img/guides/git/basics/rewriting_history_001.png" alt="Git Commit Example">
-    <br><br><br>
-
-    <strong>Polymorphism in Our Calculator: </strong> E. </p>
-    <img src="https://assets-global.website-files.com/5ff621612284ed73d44c11f3/5ff621612284edbe0f4c1c58_5f19a241624e0709908d965b_robin-github-issue-tag-system.png" alt="Github Tag Classification">
-    <br><br><br>
-
-    <strong>Abstraction in Our Calculator: </strong> A. </p>
-    <img src="https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/projects/develop-app-with-salesforce-cli-and-source-control/add-salesforce-dx-project-to-source-control/images/bf546ec3acd964673bf5f6302125fd93_step-4-github-and-git-clones.png" alt="Github remote repository example">
-    <br><br><br>
+    <strong>Abstraction in Our Calculator: </strong> Abstraction is demonstrated within the calculations directory, in that
+    the class of Calculation consists of extremely simple functions that handle every operation. Since every operation
+    obtains its values from tuples, only a singular tuple related method is needed. To ensure that all calculations
+    can be performed without worry of different data value types being used, a singular method is used to convert them
+    all into floats.</p>
+    <img src="https://th.bing.com/th/id/R.48a93004b5f0a223bcd3648a039fbcba?rik=L11adKqZt%2fxJTg&riu=http%3a%2f%2fi.stack.imgur.com%2f4Mcwq.png&ehk=%2b7FAU3bkAa%2fANK2U6aoqwGpP3UmgEPlP4n3X4ylw5e8%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Calculator image">
 {% endblock %}
