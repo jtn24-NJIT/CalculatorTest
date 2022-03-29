@@ -1,16 +1,52 @@
 """This test the homepage"""
 
-def test_request_main_menu_links(client):
-    """This tests the navigation bar and ensures every page is there."""
+def test_request_main_menu_link_Git(client):
+    """This tests the navigation bar and ensures that a specific page is there."""
     response = client.get("/")
     assert response.status_code == 200
     assert b'<a class="nav-link" href="/Git">Git</a>' in response.data
-    assert b'<a class="nav-link" href="/Docker">Docker</a>' in response.data
+
+def test_request_main_menu_link_Docker(client):
+        """This tests the navigation bar and ensures that a specific page is there."""
+        response = client.get("/")
+        assert response.status_code == 200
+        assert b'<a class="nav-link" href="/Docker">Docker</a>' in response.data
+
+
+def test_request_main_menu_link_Python_Flask(client):
+    """This tests the navigation bar and ensures that a specific page is there."""
+    response = client.get("/")
+    assert response.status_code == 200
     assert b'<a class="nav-link" href="/Python_Flask">Python/Flask</a>' in response.data
-    assert b'<a class="nav-link" href="/Continuous_Integration_and_Deployment">CICD</a>' in response.data
+
+def test_request_main_menu_link_CICD(client):
+        """This tests the navigation bar and ensures that a specific page is there."""
+        response = client.get("/")
+        assert response.status_code == 200
+        assert b'<a class="nav-link" href="/Continuous_Integration_and_Deployment">CICD</a>' in response.data
+
+def test_request_main_menu_link_Pylint(client):
+    """This tests the navigation bar and ensures that a specific page is there."""
+    response = client.get("/")
+    assert response.status_code == 200
     assert b'<a class="nav-link" href="/Pylint">Pylint</a>' in response.data
-    assert b'<a class="nav-link" href="/Arrange_Act_Assert_Testing">AAA</a>' in response.data
+
+def test_request_main_menu_link_AAA(client):
+        """This tests the navigation bar and ensures that a specific page is there."""
+        response = client.get("/")
+        assert response.status_code == 200
+        assert b'<a class="nav-link" href="/Arrange_Act_Assert_Testing">AAA</a>' in response.data
+
+def test_request_main_menu_link_OOP(client):
+    """This tests the navigation bar and ensures that a specific page is there."""
+    response = client.get("/")
+    assert response.status_code == 200
     assert b'<a class="nav-link" href="/Object_Oriented_Programming">OOP</a>' in response.data
+
+def test_request_main_menu_link_SOLID(client):
+    """This tests the navigation bar and ensures that a specific page is there."""
+    response = client.get("/")
+    assert response.status_code == 200
     assert b'<a class="nav-link" href="/Solid">SOLID</a>' in response.data
 
 def test_request_index(client):
