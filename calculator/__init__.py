@@ -15,6 +15,7 @@ class Calculator:
         """ This is the subtract method"""
         calculation = Subtraction.create(tuple_list)
         return calculation.get_result()
+
     @staticmethod
     def multiply(tuple_list):
         """ This is the subtract method"""
